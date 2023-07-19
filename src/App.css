@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body, html {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bdy{
+  background-image: url(./media/library.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title{
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 17ch;
+  font-size: 50px;
   color: white;
-}
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
 
-.App-link {
-  color: #61dafb;
-}
+  animation: typing 2s steps(17), 
+  blink .5s infinite step-end alternate;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  overflow:hidden;
+  
   }
-  to {
-    transform: rotate(360deg);
+  
+  @keyFrames typing {
+  from { width: 0}
   }
-}
+  
+  @keyFrames blink {
+   50% { border-color: transparent}
+  }
+
+  .sign-in-box {
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 10px;
+
+  }
+
