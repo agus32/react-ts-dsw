@@ -7,8 +7,17 @@ export interface Libro{
     stock_consignado?:number    
 }
 
-export interface Persona{
-    nombre: string
-    email: string
-    dni: number
+
+
+export interface User{
+    username: string
+    password: string
+    
 }
+
+interface Person {
+    id: number;
+    nombre: string;
+    email: string;
+    dni: string;
+  }
